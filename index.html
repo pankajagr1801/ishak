@@ -1,0 +1,604 @@
+<!doctype html>
+<html class=no-js lang=zxx>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <title>Ishak</title>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    
+    <link rel=stylesheet href=css/bootstrap.min.css>
+    <link rel=stylesheet href=css/owl.carousel.min.css>
+    <link rel=stylesheet href=css/magnific-popup.css>
+    <link rel=stylesheet href=css/font-awesome.min.css>
+    <link rel=stylesheet href=css/themify-icons.css>
+    <link rel=stylesheet href=css/nice-select.css>
+    <link rel=stylesheet href=css/flaticon.css>
+    <link rel=stylesheet href=css/flaticon.css>
+    <link rel=stylesheet href=css/gijgo.css>
+    <link rel=stylesheet href=css/slicknav.css>
+    <link rel=stylesheet href=css/index.css>
+    <link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css>
+</head>
+
+<body>
+    <style type=text/css>
+        @keyframes ticker-kf {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-108rem, 0, 0);
+            }
+        }
+
+        .img-ticker {
+            animation: ticker-kf 18s linear infinite;
+        }
+
+        .img-ticker>div {
+            width: 20%;
+            position: relative;
+            height: 300px;
+            background: url(img/homepage/reel-single.png);
+            background-size: cover;
+            border: solid 5px #fff;
+        }
+
+        .img-ticker>div>img {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        .mobile-hide {
+            display: block;
+        }
+
+        .footer {
+            background: rgb(17, 5, 15);
+        }
+
+        .bride-contact {
+            position: fixed;
+            bottom: 10px;
+            left: -115px;
+            z-index: 9999;
+            /*transition: .2s;*/
+        }
+
+        .bride-contact:hover {
+            left: 0px;
+            transition: .2s;
+        }
+
+        .bride-contact div {
+            display: block;
+            color: #fff;
+            background: #D97C4E;
+            margin-bottom: 10px;
+            padding: 5px 15px;
+            text-align: center;
+            line-height: 1;
+            font-family: 'Muli', sans-serif;
+        }
+
+        .bride-contact div a {
+            color: #fff;
+        }
+
+        .bride-contact div i {
+            font-size: 20px;
+            margin-left: 10px;
+            line-height: 1;
+        }
+
+        .bride-contact div span {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .groom-contact {
+            position: fixed;
+            bottom: 10px;
+            right: -130px;
+            z-index: 9999;
+            transition: .2s;
+        }
+
+        .groom-contact:hover {
+            right: 0px;
+            transition: .2s;
+        }
+
+        .groom-contact div {
+            display: block;
+            color: #fff;
+            background: #D97C4E;
+            margin-bottom: 10px;
+            padding: 5px 15px;
+            text-align: center;
+            line-height: 1;
+            font-family: 'Muli', sans-serif;
+        }
+
+        .groom-contact div a {
+            color: #fff;
+        }
+
+        .groom-contact div span {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .groom-contact div i {
+            font-size: 20px;
+            margin-right: 10px;
+            line-height: 1;
+        }
+
+        .venue {
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        .collapse {
+            display: block;
+        }
+
+        @media (max-width: 767px) {
+            .img-ticker>div {
+                width: 80%;
+            }
+            .mobile-view {
+                display: block;
+            }
+            .mobile-hide {
+                display: none;
+            }
+            #eventbuttonb,
+            #eventbuttong {
+                display: inline-block;
+                color: #fff;
+                width: 49%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-bottom: 30px;
+                font-family: 'Muli', sans-serif;
+                background: #D97C4E;
+                padding: 5px 10px;
+                margin-top: 50px;
+            }
+            .collapse {
+                display: none;
+            }
+        }
+    </style>
+    <div class="bride-contact">
+        <div><a href="https://api.whatsapp.com/send?phone=919886495632" target="_blank"><span>Vivek (Bride Side)</span></a><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+        <div><a href="tel:+919886495632" target="_blank"><span>Vivek (Bride Side)</span></a><i class="fa fa-phone" aria-hidden="true"></i></div>
+    </div>
+    <div class="groom-contact">
+        <div><i class="fa fa-whatsapp" aria-hidden="true"></i><a href="https://api.whatsapp.com/send?phone=918904618732" target="_blank"><span>Pankaj (Groom Side)</span></a></div>
+        <div><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918904618732" target="_blank"><span>Pankaj (Groom Side)</span></a></div>
+    </div>
+    <div class=home-top>
+        <img src=img/homepage/pink-3.png>
+        <!--<div class="srlogo mx-auto"><img src=img/homepage/logo.svg></div>-->
+
+        <div id="invite" style="color: white;font-size: 22px;" >
+
+        </div>
+    </div>
+    <div class=weeding_countdown_area>
+        <div class="flowaers_top d-none d-lg-block"><img src=img/banner/flower-top.png alt=""></div>
+        <div class="flowaers_bottom d-none d-lg-block"><img src=img/banner/flower-bottom.png alt=""></div>
+        <div class=container>
+            <div class="row justify-content-center">
+                <div class=col-sm-12>
+                    <div class="section_title text-center" style="margin-bottom: 0">
+                        <img class=mx-auto src=img/banner/flowers.png alt="">
+                        <h3 style="font-family: 'Petit Formal Script', cursive;text-transform: none;">#Ishak</h3><br><br>
+                        <p class="text-white" style="font-size: 30px;"><em>'<strong>Deepak</strong> and <strong>Ishika</strong> are getting hitched!'</em></p>
+                        <div id=wedding class="countdown_area counter_bg"></div>
+                        <p style="font-size: 22px;">Welcome to our wedding website, we can’t wait to celebrate our special day with you.<br>So have fun, take a look around and don’t forget to RSVP!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img class="overlay4" src="img/homepage/bg-2.jpg" width="100%">
+    </div>
+    <div class="container text-center" style="padding: 100px 0">
+        <img class=mx-auto src=img/banner/flowers.png alt="" width="20%">
+        <h3 class=mx-auto style="font-family: 'Muli', sans-serif;font-size: 36px;font-weight: 400;">27<sup style="color: #AEAD8E;text-transform: lowercase">th</sup> August, 2021</h3>
+        <h2 class=mx-auto style="color: #C78665; font-size: 5rem;padding-bottom: 50px;">Roka'd</h2>
+        <img class=mx-auto src=img/homepage/roka-2.png width=70%>
+    </div>
+    <div class="container text-center" style="padding: 100px 0">
+        <img class=mx-auto src=img/banner/flowers.png alt="" width="20%">
+        <h3 class=mx-auto style="font-family: 'Muli', sans-serif;font-size: 36px;font-weight: 400;">19<sup style="color: #AEAD8E;text-transform: lowercase">th</sup> December, 2021</h3>
+        <h2 class=mx-auto style="color: #C78665; font-size: 5rem;padding-bottom: 50px;">Engaged</h2>
+        <img class=mx-auto src=img/homepage/engagement-1.JPG width=70%>
+    </div>
+
+    <!--<div class=container>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h2 style="font-size: 2rem;margin:20px auto;text-align: center">#The Proposal</h2>
+                <video width=100% height="auto" controls autoplay loop muted>
+<source src=img/homepage/theproposal.mp4 type=video/mp4></source>
+<source id=webm src=img/homepage/theproposal.mp4 type=video/webm></source>
+<source id=ogv src=img/homepage/theproposal.mp4 type=video/ogg></source>
+<source src=img/homepage/theproposal.mp4 type=video/ogg>Your browser does not support the video tag.</source>
+</video>
+            </div>
+
+        </div>
+    </div>-->
+    <div class="love_story_area mobile-hide">
+        <div class=container>
+            <div class="row justify-content-center">
+                <div class=col-xl-12>
+                    <div class="section_title text-center">
+                        <img class=mx-auto src=img/banner/flowers.png alt="">
+                        <h3>Our Story</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+
+                <div class="col-xl-4 col-lg-4 col-md-12" style="background: url(img/homepage/bride-4.png);background-size: contain;"></div>
+                <div class="col-xl-4 col-lg-4 col-md-12">
+                    <p class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">Our story began with our parents 'arranging' for us to meet and fall in love. And luckily for us they did because what followed from there has been a beautiful story which is translating into a lifetime of togetherness for us.</p><br>
+                    <p
+                        class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;"><strong>Deepak</strong> has always been a self reliant, independent person who is always looking out for his people. He loves to travel, makes the most amazing food, has a great sense of humor and loves motor sports. On the contrary
+                        <strong>Ishika</strong> is a big foodie, loves to travel and is an adventure sports enthusiast.</p><br>
+                        <p class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">While both of us are highly similar in nature, we are equally opposite and that is what makes us the best combination. We have discovered that we compliment and balance each other in the most beautiful manner.</p><br>
+                        <p class="text-justify"
+                            style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">We have had the most wonderful courtship filled with surprises and beautiful memories. We can't wait to start our lives together and look forward to celebrating the beginning of this on our wedding day with you all!</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12" style="background: url(img/homepage/groom-2.png);background-size: contain;"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container mobile-view" style="padding-bottom: 100px;">
+        <div class="row justify-content-center">
+            <div class="col-sm-12">
+                <div class="section_title text-center">
+                    <img class=mx-auto src=img/banner/flowers.png alt="">
+                    <h3>Our Story</h3>
+                </div>
+                <img src=img/homepage/mobile-story.JPG alt="">
+                <p class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">Our story began with our parents 'arranging' for us to meet and fall in love. And luckily for us they did because what followed from there has been a beautiful story which is translating into a lifetime of togetherness for us.</p><br>
+                <p
+                    class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;"><strong>Deepak</strong> has always been a self reliant, independent person who is always looking out for his people. He loves to travel, makes the most amazing food, has a great sense of humor and loves motor sports. On the contrary <strong>Ishika</strong>                    is a big foodie, loves to travel and is an adventure sports enthusiast.</p><br>
+                    <p class="text-justify" style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">While both of us are highly similar in nature, we are equally opposite and that is what makes us the best combination. We have discovered that we compliment and balance each other in the most beautiful manner.</p><br>
+                    <p class="text-justify"
+                        style="font-family: 'Muli', sans-serif;color: #b2b2b2!important;">We have had the most wonderful courtship filled with surprises and beautiful memories. We can't wait to start our lives together and look forward to celebrating the beginning of this on our wedding day with you all!</p>
+            </div>
+        </div>
+    </div>
+    <div class=gallery_area>
+        <div class=container>
+            <div class=row>
+                <div class=col-xl-12>
+                    <div class="section_title text-center">
+                        <img class=mx-auto src=img/banner/flowers.png alt="">
+                        <h3>Gallery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=overflow-hidden>
+            <div class="flex -mx-4 img-ticker">
+                <div class="self-start flex-lg-column"><img src="img/homepage/gallery-1.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-2.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-3.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-4.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-5.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-6.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-7.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-8.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-9.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-10.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-11.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-12.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-13.jpg"></div>
+                <div class="self-start flex-none"><img src="img/homepage/gallery-14.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class=program_details_area style="padding-bottom: 0;">
+        <div class=container>
+            <div class=row>
+                <div class=col-xl-12>
+                    <div class="section_title text-center">
+                        <img class=mx-auto src="img/banner/flowers.png" alt="">
+                        <h3>EVENTS</h3>
+                    </div>
+                </div>
+            </div>
+            <div class=row id="weddingevents">
+                <div style="text-align: center;" class="col-sm-12">
+                    <a href="#events" class="mobile-view" data-toggle="collapse" id="eventbuttonb">Events</a>
+                </div>
+                <div class="col-xl-12 col-lg-12 collapse" id="events" data-parent="#weddingevents">
+                    <div style="" class="single_program program_bg_2 text-center">
+                        <div class=program_inner>
+                            <h3>LAGAN</h3>
+                            <p class="venue">Geetajalli Hall</p>
+                            <p>10am onwards</p><br>
+                            <h3>LUNCH</h3>
+                            <p class="venue">Restaurant</p>
+                            <p>12 noon to 2pm</p><br>
+                            <h3>HALDI</h3>
+                            <p class="venue">Open Theater</p>
+                            <p>1pm onwards</p><br>
+                            <h3>WEDDING/RECEPTION</h3>
+                            <p class="venue">Royal Garden</p>
+                            <p>6pm onwards</p><br>
+                            <h3>DINNER</h3>
+                            <p class="venue">Royal Garden</p>
+                            <p>8pm onwards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=program_details_area>
+        <div class=container>
+            <div class=row>
+                <div class=col-xl-12>
+                    <div class="section_title text-center">
+                        <img class=mx-auto src="img/banner/flowers.png" alt="">
+                        <h3>DRESS CODE</h3>
+                    </div>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single_program program_bg_2 text-center" style="background: url(img/homepage/dress-1.jpg);background-position: bottom center;">
+                        <div class=program_inner>
+                            <span>9am onwards, Monday, February 10, 2022</span>
+                            <h3>Lagan</h3>
+                            <p>Indian/ Indo Western Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single_program program_bg_3 text-center" style="background: url(img/homepage/dress-2.jpg);background-position: center center;">
+                        <div class=program_inner>
+                            <span>1pm onwards, Tuesday, February 10, 2022</span>
+                            <h3>Haldi</h3>
+                            <p>Yellow Indian Wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single_program program_bg_3 text-center" style="background: url(img/homepage/dress-3.jpg);background-position: bottom center;">
+                        <div class=program_inner>
+                            <span>6pm onwards, Tuesday, February 10, 2022</span>
+                            <h3>Wedding &amp; Reception</h3>
+                            <p>Heavy Indian Wear</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=attending_area>
+        <div class=container>
+            <div class=row>
+                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+                    <div class=main_attending_area>
+                        <div class="flower_1 d-none d-lg-block"><img src=img/appointment/flower-top.png alt=""></div>
+                        <div class="flower_2 d-none d-lg-block"><img src=img/appointment/flower-bottom.png alt=""></div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-7 col-lg-8">
+                                <div class=popup_box>
+                                    <div class=popup_inner>
+                                        <div class="form_heading text-center">
+                                            <h3>Are You Attending?</h3>
+                                        </div><br>
+                                        <p class="text-center">Please send us your names along with details on <a href="https://api.whatsapp.com/send?phone=918904618732" style="color: #C78665"><span>Click</span></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=container>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <section class=location_area>
+                    <div class=location_info>
+                        <img class=mx-auto src=img/banner/flowers.png alt="">
+                        <div class=location_inner>
+                            <div class="location_top text-center">
+                                <h3>Location</h3>
+                            </div>
+                            <div class="address_info d-flex justify-content-between">
+                                <div class="single_address text-center">
+                                    <h4>Geetanjali Hotel</h4>
+                                    <p>Geetanjali Hotel, NH11, Agra Road, Bharatpur, 321001</p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <section class=maps>
+                    <div class="container text-center">
+                        <img class=mx-auto src=img/banner/flowers.png alt="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14196.095550425025!2d77.5360189!3d27.186986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe27609d6d3db63da!2sGeetanjali%20Hotel%20%26%20motel!5e0!3m2!1sen!2sin!4v1640239714739!5m2!1sen!2sin"
+                            width=100% height=250 frameborder=0 style=border:0 allowfullscreen aria-hidden=false tabindex=0></iframe>
+                        <h4>Geetanjali Hotel</h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class=footer>
+        <div class=footer_top>
+            <div class=container>
+                <div class=row>
+                    <div class=col-xl-12>
+                        <div class=quick_links></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src=img/homepage/pink-2.png width=100%>
+        <div class=container>
+            <div class=row>
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center Copyright-text">
+                    <p style="color: #fff;font-family: 'Muli', sans-serif;">© #Ishak || All Rights Reserved || Designed &amp; Developed by <a href="https://www.linkedin.com/in/pankaj-agrawal-a9502b17/" target="_blank" style="color:#c78665"> Pankaj</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src=js/vendor/modernizr-3.5.0.min.js></script>
+    <script src=js/vendor/jquery-1.12.4.min.js></script>
+    <script src=js/popper.min.js></script>
+    <script src=js/bootstrap.min.js></script>
+    <script src=js/owl.carousel.min.js></script>
+    <script src=js/isotope.pkgd.min.js></script>
+    <script src=js/ajax-form.js></script>
+    <script src=js/waypoints.min.js></script>
+    <script src=js/jquery.counterup.min.js></script>
+    <script src=js/imagesloaded.pkgd.min.js></script>
+    <script src=js/scrollIt.js></script>
+    <script src=js/jquery.scrollUp.min.js></script>
+    <script src=js/wow.min.js></script>
+    <script src=js/nice-select.min.js></script>
+    <script src=js/gijgo.min.js></script>
+    <script src=js/jquery.countdown.min.js></script>
+    <script src=js/jquery.slicknav.min.js></script>
+    <script src=js/jquery.magnific-popup.min.js></script>
+    <script src=js/plugins.js></script>
+    <script src=js/contact.js></script>
+    <script src=js/jquery.ajaxchimp.min.js></script>
+    <script src=js/jquery.form.js></script>
+    <script src=js/jquery.validate.min.js></script>
+    <script src=js/mail-script.js></script>
+    <script src=js/main.js></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script>
+        var params = {},
+            pairs = document.URL.split('?')
+                .pop()
+                .split('&');
+
+        for (var i = 0, p; i < pairs.length; i++) {
+            p = pairs[i].split('=');
+            params[p[0]] = p[1];
+        }
+
+        var name = params["name"];
+        const div = document.createElement('div');
+        if (name === "" || name === undefined || name == 'undefined')
+            div.innerHTML = "";
+        else {
+            name = decodeURI(params["name"]).toUpperCase();
+            div.innerHTML = '<div>We would be honoured if</div>\n' +
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">\n'
+                + name + '</span>\n' + '<div>would join them in celebrating marriage</div>';
+        }
+        document.getElementById('invite').appendChild(div);
+    </script>
+
+    <script type=text/javascript>
+        $(window).load(function() {
+            $(".gallery-gal img").click(function() {
+                $(".lightbox").fadeIn(300);
+                $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' />");
+                $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
+                /*$(".title").append("<h1>" + $(this).attr("alt") + "</h1>");*/
+                $("html").css("overflow", "hidden");
+                if ($(this).is(":last-child")) {
+                    $(".arrowr").css("display", "none");
+                    $(".arrowl").css("display", "block");
+                } else if ($(this).is(":first-child")) {
+                    $(".arrowr").css("display", "block");
+                    $(".arrowl").css("display", "none");
+                } else {
+                    $(".arrowr").css("display", "block");
+                    $(".arrowl").css("display", "block");
+                }
+            });
+
+            $(".close").click(function() {
+                $(".lightbox").fadeOut(300);
+                $("h1").remove();
+                $(".lightbox img").remove();
+                $("html").css("overflow", "auto");
+            });
+
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) {
+                    $(".lightbox").fadeOut(300);
+                    $(".lightbox img").remove();
+                    $("html").css("overflow", "auto");
+                }
+            });
+
+            $(".arrowr").click(function() {
+                var imgSrc = $(".lightbox img").attr("src");
+                var search = $(".gallery-gal").find("img[src$='" + imgSrc + "']");
+                var newImage = search.next().attr("src");
+                /*$(".lightbox img").attr("src", search.next());*/
+                $(".lightbox img").attr("src", newImage);
+                $(".filter").css("background-image", "url(" + newImage + ")");
+
+                if (!search.next().is(":last-child")) {
+                    $(".arrowl").css("display", "block");
+                } else {
+                    $(".arrowr").css("display", "none");
+                }
+            });
+
+            $(".arrowl").click(function() {
+                var imgSrc = $(".lightbox img").attr("src");
+                var search = $(".gallery-gal").find("img[src$='" + imgSrc + "']");
+                var newImage = search.prev().attr("src");
+                /*$(".lightbox img").attr("src", search.next());*/
+                $(".lightbox img").attr("src", newImage);
+                $(".filter").css("background-image", "url(" + newImage + ")");
+
+                if (!search.prev().is(":first-child")) {
+                    $(".arrowr").css("display", "block");
+                } else {
+                    $(".arrowl").css("display", "none");
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

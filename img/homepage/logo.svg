@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80mm" height="74.307mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8000 7431"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:url(#id0);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-5868.86" y1="2506.17" x2="12460" y2="2488.3">
+   <stop offset="0" style="stop-opacity:1; stop-color:#AD6440"/>
+   <stop offset="0.380392" style="stop-opacity:1; stop-color:#DA7D4E"/>
+   <stop offset="0.470588" style="stop-opacity:1; stop-color:#B16543"/>
+   <stop offset="0.619608" style="stop-opacity:1; stop-color:#F39869"/>
+   <stop offset="0.788235" style="stop-opacity:1; stop-color:#86482A"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#C06C45"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M3504 959c85,-193 224,-363 394,-488 259,-189 575,-261 890,-193 602,129 990,714 876,1317 -133,703 -1080,1292 -1765,1547 588,404 1206,882 1517,1534 238,500 431,1014 652,1521 198,455 315,689 689,1023 432,386 1091,202 1243,-227 -6,-1 -12,-1 -18,-2 -596,-76 -926,-777 -1188,-1244 -437,-780 -907,-1868 -1586,-2431 459,-266 806,-503 1043,-886 434,-698 134,-1678 -443,-2119 -673,-513 -1910,-375 -2311,332 -434,-705 -1543,-805 -2235,-423 -786,435 -1024,1526 -546,2244 442,664 1860,1377 2427,1849 1146,954 665,2566 -840,2835 -726,129 -1571,-28 -1999,-719 -104,-169 -163,-357 -175,-555 -17,-275 72,-554 247,-763 260,-311 454,-409 821,-458 -504,266 -381,1279 410,1158 572,-66 764,-836 274,-1141 -569,-354 -1374,-37 -1690,511 -190,329 -248,705 -130,1069 468,1438 2788,1400 3751,662 376,-288 631,-670 768,-1122 290,-1158 -325,-1880 -1264,-2473 -628,-370 -1792,-961 -1969,-1737 -127,-552 225,-1161 892,-1300 532,-111 1053,203 1265,679z"/>
+ </g>
+</svg>
