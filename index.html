@@ -205,7 +205,7 @@
                 <div class=col-sm-12>
                     <div class="section_title text-center" style="margin-bottom: 0">
                         <img class=mx-auto src=img/banner/flowers.png alt="">
-                        <h3 style="font-family: 'Petit Formal Script', cursive;text-transform: none;">#Ishak</h3><br><br>
+                        <h3 style="font-family: 'Petit Formal Script', cursive;text-transform: none;">#Ish-ak</h3><br><br>
                         <p class="text-white" style="font-size: 30px;"><em>'<strong>Deepak</strong> and <strong>Ishika</strong> are getting hitched!'</em></p>
                         <div id=wedding class="countdown_area counter_bg"></div>
                         <p style="font-size: 22px;">Welcome to our wedding website, we can’t wait to celebrate our special day with you.<br>So have fun, take a look around and don’t forget to RSVP!</p>
@@ -216,7 +216,7 @@
     </div>
 
     <div>
-        <img class="overlay4" src="img/homepage/bg-2.jpg" width="100%">
+        <img class="overlay4" src="img/homepage/bg-2.JPG" width="100%">
     </div>
     <div class="container text-center" style="padding: 100px 0">
         <img class=mx-auto src=img/banner/flowers.png alt="" width="20%">
@@ -330,14 +330,14 @@
                 </div>
             </div>
             <div class=row id="weddingevents">
-                <div style="text-align: center;" class="col-sm-12">
-                    <a href="#events" class="mobile-view" data-toggle="collapse" id="eventbuttonb">Events</a>
-                </div>
-                <div class="col-xl-12 col-lg-12 collapse" id="events" data-parent="#weddingevents">
+                <!--<div style="text-align: center;" class="col-sm-12">
+                    <a href="#events" class="mobile-view" data-toggle="collapse" id="eventbuttonb" aria-expanded="true">Events</a>
+                </div>-->
+                <div class="col-xl-12 col-lg-12 collapse show" id="events" data-parent="#weddingevents">
                     <div style="" class="single_program program_bg_2 text-center">
                         <div class=program_inner>
                             <h3>LAGAN</h3>
-                            <p class="venue">Geetajalli Hall</p>
+                            <p class="venue">Geetanjalli Hall</p>
                             <p>10am onwards</p><br>
                             <h3>LUNCH</h3>
                             <p class="venue">Restaurant</p>
@@ -369,7 +369,7 @@
             </div>
             <div class=row>
                 <div class="col-xl-4 col-lg-4">
-                    <div class="single_program program_bg_2 text-center" style="background: url(img/homepage/dress-1.jpg);background-position: bottom center;">
+                    <div class="single_program program_bg_2 text-center" style="background: url(img/homepage/dress-2.jpg);background-position: bottom center;">
                         <div class=program_inner>
                             <span>9am onwards, Monday, February 10, 2022</span>
                             <h3>Lagan</h3>
@@ -378,7 +378,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4">
-                    <div class="single_program program_bg_3 text-center" style="background: url(img/homepage/dress-2.jpg);background-position: center center;">
+                    <div class="single_program program_bg_3 text-center" style="background: url(img/homepage/dress-1.jpg);background-position: center center;">
                         <div class=program_inner>
                             <span>1pm onwards, Tuesday, February 10, 2022</span>
                             <h3>Haldi</h3>
@@ -412,7 +412,7 @@
                                         <div class="form_heading text-center">
                                             <h3>Are You Attending?</h3>
                                         </div><br>
-                                        <p class="text-center">Please send us your names along with details on <a href="https://api.whatsapp.com/send?phone=918904618732" style="color: #C78665"><span>Click</span></a></p>
+                                        <p class="text-center">Please send us your names along with details on <a target="_blank" href="https://forms.gle/2mpeqBBAEgrGeC6YA" style="color: #C78665"><span>Click</span></a></p>
 
                                     </div>
                                 </div>
@@ -525,9 +525,12 @@
             div.innerHTML = "";
         else {
             name = decodeURI(params["name"]).toUpperCase();
-            div.innerHTML = '<div>We would be honoured if</div>\n' +
-                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">\n'
-                + name + '</span>\n' + '<div>would join them in celebrating marriage</div>';
+            div.innerHTML =  '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">\n Dear'
+                + name + '</span>\n' + '<div>We request the honour of your presence in celebrating the wedding of</div>\n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">\n Deepak \n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: medium">\n & \n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">\n Ishika \n' + 
+                ';
         }
         document.getElementById('invite').appendChild(div);
     </script>
