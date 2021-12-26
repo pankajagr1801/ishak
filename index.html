@@ -525,9 +525,12 @@
             div.innerHTML = "";
         else {
             name = decodeURI(params["name"]).toUpperCase();
-            div.innerHTML = '<div>We would be honoured if</div>\n' +
-                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">\n'
-                + name + '</span>\n' + '<div>would join them in celebrating marriage</div>';
+            div.innerHTML =  '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">\n Dear'
+                + name + '</span>\n' + '<div>We request the honour of your presence in celebrating the wedding of</div>\n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">\n Deepak \n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: medium">\n & \n' + 
+                '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">\n Ishika \n' + 
+                ';
         }
         document.getElementById('invite').appendChild(div);
     </script>
