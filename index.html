@@ -534,7 +534,10 @@
         var name = params["name"];
         const div = document.createElement('div');
         if (name === "" || name === undefined || name == 'undefined')
-            div.innerHTML = "";
+            div.innerHTML =  '</span>\n' + '<div>We would be delighted with your presence at the wedding of </div><br>' +
+                '<div><span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">Deepak</span></div>' +
+                '<div><span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: medium">&</span> </div>' +
+                '<div><span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: font-size: xx-large">Ishika</span></div>' ;
         else {
             name = decodeURI(params["name"]).toUpperCase();
             div.innerHTML =  '<span style="color: #c78665;font-family: \'Petit Formal Script\';text-decoration: underline;font-size: xx-large">Dear \n'
